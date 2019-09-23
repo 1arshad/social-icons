@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Social-Icons</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<style type="text/css">
+		div{
+			
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		a{
+			height: 100px;
+			width: 100px;
+			background-color: #f5f6fa;
+			text-align: center;
+			border-radius: 50%;
+			box-shadow: 1px 4px 2px 2px #dcdde1;
+			line-height: 110px;
+			margin: 10px;
+			position: relative;
+			overflow: hidden;
+		}
+		.fab{
+			line-height: 70px;
+			align-items: center;
+
+		}
+		.fa-instagram{
+			color: #e84393;
+		}
+		.fa-youtube{
+			color: #e84118;
+
+		}
+		.fa-twitter{
+			color: #0097e6;
+		}
+		.fa-linkedin-in{
+			color: #0097e6;
+		}
+		a:hover .fab{
+			transform: scale(1.5);
+			color: #f5f6fa;
+		}
+		a:before{
+			content: "";
+			width: 120%;
+			height: 120%;
+			position: absolute;
+			top: 90%;
+			left: -50%;
+			background-color: #00a8ff;
+			transform: rotate(60deg); 
+
+		}
+		a:hover:before{
+			animation: socialicons 0.8s 1;
+		}
+		@keyframes socialicons{
+			0%{top: 90%; left: -50%;}
+			50%{top: -60%; left: -10%;}
+			100%{top: -10%; left: -10%;}
+
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+		<a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+		<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+		<a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+		<a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+	</div>
+
+</body>
+</html>
